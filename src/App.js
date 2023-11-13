@@ -1,3 +1,5 @@
+// this took way to long
+
 import React from 'react';
 import Header from './components/Header';
 import ContactInfo from './components/ContactInformation';
@@ -9,24 +11,20 @@ import AffiliationInfo from './components/Affiliation';
 import ReferencesInfo from './components/References';
 import "./CV.css";
 
-import { Fade } from 'react-reveal';
-
 const App = () => {
-  const fadeDuration = 980;
-
   return (
-      <div>
-        <Fade duration={fadeDuration}><Header /></Fade>
-        <div className="content">
-          <Fade duration={fadeDuration}><ContactInfo /></Fade>
-          <Fade duration={fadeDuration}><PersonalInfo /></Fade>
-          <Fade duration={fadeDuration}><EducationInfo /></Fade>
-          <Fade duration={fadeDuration}><SkillsInfo /></Fade>
-          <Fade duration={fadeDuration}><WorkExperience /></Fade>
-          <Fade duration={fadeDuration}><AffiliationInfo /></Fade>
-          <Fade duration={fadeDuration}><ReferencesInfo /></Fade>
-        </div>
+    <div>
+      <div className="header"><Header /></div>
+      <div className="content">
+        <div className="contact-info"><ContactInfo /></div>
+        <div className="personal-info"><PersonalInfo /></div>
+        <div className="education-info"><EducationInfo /></div>
+        <div className="skills-info"><SkillsInfo /></div>
+        <div className="work-experience"><WorkExperience /></div>
+        <div className="affiliation-info"><AffiliationInfo /></div>
+        <div className="references-info"><ReferencesInfo /></div>
       </div>
+    </div>
   );
 };
 
