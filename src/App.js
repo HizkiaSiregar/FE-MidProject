@@ -1,3 +1,5 @@
+// this took way to long
+
 import React from 'react';
 import Header from './components/Header';
 import ContactInfo from './components/ContactInformation';
